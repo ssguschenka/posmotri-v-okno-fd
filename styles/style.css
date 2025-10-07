@@ -42,7 +42,7 @@ ol {
 
 .button {
   border: 1px solid #fff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
@@ -95,7 +95,8 @@ ol {
   align-items: end;
   width: 100%;
   justify-content: center;
-  padding: 133px 30px;
+  padding: 0 30px;
+  overflow: auto;
 }
 
 /* section result ---------------------------------------------------*/
@@ -127,7 +128,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -147,7 +148,7 @@ ol {
 }
 
 .search-form__textfield {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -195,11 +196,6 @@ ol {
   opacity: 1;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 .search-form__label:has(input[type="checkbox"]):hover {
   text-decoration: underline;
   cursor: pointer;
@@ -235,7 +231,7 @@ ol {
 .content__list-container {
   height: 298px;
   width: 395px;
-  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -251,7 +247,7 @@ ol {
 .content__card-link {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -271,7 +267,7 @@ ol {
 }
 
 .content__card-link:focus {
-  border: none;
+  outline: none;
 }
 
 .content__card-link:focus-visible {
@@ -292,7 +288,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -307,7 +303,7 @@ ol {
 
 .content__video-card-description {
   line-height: 16.2px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -315,6 +311,7 @@ ol {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   white-space: pre-wrap;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
